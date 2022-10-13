@@ -11,11 +11,16 @@ body {
     margin: 0;
 }
 
-section {
-    width: 1024px;
+.container {
+    max-width: 1024px;
     margin: 0 auto;
-    padding: 60px;
+    padding: 20px;
     img {
-        
+
     }
+}
+
+footer {
+    background-color: rgb(235, 235, 235);
+    // position: sticky;
 }
