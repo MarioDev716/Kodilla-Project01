@@ -1,7 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap);
+$color-main: rgb(128, 36, 36);
+
 
 * {
-    border: 1px dotted black;
+    // border: 1px dotted black;
 }
 
 body {
@@ -11,12 +14,63 @@ body {
     margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: $color-main;
+    font-weight: 300;
+}
+
 .container {
     max-width: 1024px;
     margin: 0 auto;
     padding: 20px;
-    img {
 
+    img {}
+}
+
+.code {
+    font-style: italic;
+    font-family: 'Cutive Mono', monospace;
+    color: grey;
+}
+
+nav {
+    .logo {
+        // height: 30px;   
+        padding-right: 20px;
+    }
+
+    ul {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    li:first-child {
+        // background: red;    
+    }
+
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+    }
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-main;
+        padding: 5px 10px;
+    }
+
+    a:hover {
+        background: $color-main;
+        color: #fff;
+        border-radius: 5px;
+        transition: all 0.5s;
     }
 }
 
