@@ -20,7 +20,9 @@ h1, h2, h3, h4, h5, h6 {
 .code {
   font-style: italic;
   font-family: "Cutive Mono", monospace;
-  color: grey;
+  color: rgb(82, 82, 82);
+  border-left: 2px solid rgb(128, 36, 36);
+  padding-left: 20px;
 }
 
 nav .logo {
