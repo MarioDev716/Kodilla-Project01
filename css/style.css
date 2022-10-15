@@ -24,7 +24,7 @@ h6 {
 }
 
 .container:nth-child(2) {
-  min-height: calc(100vh - 68px - 175px);
+  min-height: calc(100vh - 40px - 68px - 175px);
 }
 
 .code {
@@ -60,7 +60,6 @@ nav a {
   text-transform: uppercase;
   color: rgb(128, 36, 36);
   padding: 5px 10px;
-  border-right: 5px solid rgba(0, 0, 0, 0);
 }
 nav a:hover {
   border-bottom: 1px solid rgb(128, 36, 36);

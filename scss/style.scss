@@ -31,8 +31,9 @@ h6 {
 }
 
 .container:nth-child(2) {
-    min-height: calc(100vh - 68px - 175px);
+    min-height: calc(100vh - 40px - 68px - 175px);
 }
+
 .code {
     font-style: italic;
     font-family: 'Cutive Mono', monospace;
@@ -59,10 +60,6 @@ nav {
         margin: 0;
     }
 
-    li:first-child {
-        // background: red;    
-    }
-
     li {
         list-style: none;
         margin: 0;
@@ -75,14 +72,9 @@ nav {
         text-transform: uppercase;
         color: $color-main;
         padding: 5px 10px;
-        border-right: 5px solid rgba(0, 0, 0, 0);
     }
 
     a:hover {
-        // background: $color-main;
-        // color: #fff;
-        // border-radius: 5px;
-        // border-right: 5px solid $color-main;
         border-bottom: 1px solid $color-main;
         transition: all 0.5s;
     }
@@ -91,5 +83,4 @@ nav {
 footer {
     background-color: rgb(235, 235, 235);
     height: 175px;
-    // position: sticky;
 }
