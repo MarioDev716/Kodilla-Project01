@@ -14,7 +14,12 @@ body {
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $color-main;
     font-weight: 300;
 }
@@ -23,10 +28,11 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1024px;
     margin: 0 auto;
     padding: 20px;
-
-    img {}
 }
 
+.container:nth-child(2) {
+    min-height: calc(100vh - 68px - 175px);
+}
 .code {
     font-style: italic;
     font-family: 'Cutive Mono', monospace;
@@ -36,6 +42,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 nav {
+
+    height: 68px;
+
     .logo {
         // height: 30px;   
         padding-right: 20px;
@@ -66,17 +75,21 @@ nav {
         text-transform: uppercase;
         color: $color-main;
         padding: 5px 10px;
+        border-right: 5px solid rgba(0, 0, 0, 0);
     }
 
     a:hover {
-        background: $color-main;
-        color: #fff;
-        border-radius: 5px;
+        // background: $color-main;
+        // color: #fff;
+        // border-radius: 5px;
+        // border-right: 5px solid $color-main;
+        border-bottom: 1px solid $color-main;
         transition: all 0.5s;
     }
 }
 
 footer {
     background-color: rgb(235, 235, 235);
+    height: 175px;
     // position: sticky;
 }
